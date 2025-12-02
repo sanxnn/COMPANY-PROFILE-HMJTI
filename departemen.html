@@ -14,6 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="assets/aos-master/dist/aos.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   </head>
   <body>
@@ -137,7 +138,7 @@
     <!-- hero -->
 
     <section class="departemen">
-      <div class="title">DEPARTEMEN</div>
+      <div class="title" data-aos="fade-in">DEPARTEMEN</div>
 
       <div class="grid">
         <div class="card">
@@ -274,6 +275,13 @@
         }
         setTimeout(hideLoading, 3500);
       })();
+    </script>
+    <script src="assets/aos-master/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 2000,
+        once: true,
+      })
     </script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="assets/js/script.js"></script>

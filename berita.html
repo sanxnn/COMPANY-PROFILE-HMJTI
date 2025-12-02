@@ -14,6 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="assets/aos-master/dist/aos.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   </head>
 
@@ -137,54 +138,54 @@
 
     <!-- hero -->
     <section class="info-main-section">
-      <h2>INFORMASI</h2>
+      <h2 data-aos="fade-in">INFORMASI</h2>
 
-      <div class="info-grid">
+      <div class="info-grid" data-aos="fade-up">
         <!-- Card 1: EPIM 2025 -->
         <div class="info-card card-1">
           <div class="card-image"></div>
           <div class="card-content">
-            <h3>Pengumuman Juara EPIM 2025</h3>
-            <p>
+            <h3 data-aos="fade-up">Pengumuman Juara EPIM 2025</h3>
+            <p data-aos="fade-up">
               Perjuangan penuh kreativitas, ide cemerlang, dan semangat pantang
               menyerah akhirnya membuahkan hasil terbaik. Kami dengan bangga
               mengumumkan para juara Lomba EPIM 2025 yang telah memberikan karya
               luar biasa dan inspiratif.
             </p>
-            <a href="informasi-1.html" class="read-more-btn">
+            <a href="informasi-1.html" class="read-more-btn" data-aos="fade-right">
               selengkapnya <i class="fas fa-arrow-right"></i>
             </a>
           </div>
         </div>
 
         <!-- Card 2: NDJI -->
-        <div class="info-card card-2">
+        <div class="info-card card-2" data-aos="fade-up">
           <div class="card-image"></div>
           <div class="card-content">
-            <h3>Kolaborasi Musik: NDJI x HMJTI</h3>
-            <p>
-              Selama lebih dari dua dekade, NDJI telah menjadi soundtrack bagi
+            <h3 data-aos="fade-up">Kolaborasi Musik: NIDJI x HMJTI</h3>
+            <p data-aos="fade-up">
+              Selama lebih dari dua dekade, NIDJI telah menjadi soundtrack bagi
               anak muda Indonesia. Dari hits breakthrough mereka seperti "Hapus
-              Aku" dan "Dasklar Pelangi" hingga rilisan terbaru, mereka terus
+              Aku" dan "Laskar Pelangi" hingga rilisan terbaru, mereka terus
               berkembang.
             </p>
-            <a href="informasi-2.html" class="read-more-btn">
+            <a href="informasi-2.html" class="read-more-btn" data-aos="fade-right">
               selengkapnya <i class="fas fa-arrow-right"></i>
             </a>
           </div>
         </div>
 
         <!-- Card 3: LKMM PRA-TD -->
-        <div class="info-card card-3">
+        <div class="info-card card-3" data-aos="fade-up">
           <div class="card-image"></div>
           <div class="card-content">
-            <h3>LKMM Pra-Tingkat Dasar 2025</h3>
-            <p>
+            <h3 data-aos="fade-up">LKMM Pra-Tingkat Dasar 2025</h3>
+            <p data-aos="fade-up">
               HMJ-TI dengan bangga mengumumkan bahwa pada bulan Oktober ini akan
               diselenggarakan kegiatan Latihan Keterampilan Manajemen Mahasiswa
               Pra-Tingkat Dasar (LKMM PRA-TD) 2025.
             </p>
-            <a href="informasi-3.html" class="read-more-btn">
+            <a href="informasi-3.html" class="read-more-btn" data-aos="fade-right">
               selengkapnya <i class="fas fa-arrow-right"></i>
             </a>
           </div>
@@ -279,6 +280,13 @@
         }
         setTimeout(hideLoading, 3500);
       })();
+    </script>
+    <script src="assets/aos-master/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1500,
+        once: true,
+      })
     </script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="assets/js/script.js"></script>

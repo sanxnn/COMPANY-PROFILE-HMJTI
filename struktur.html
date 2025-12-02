@@ -16,6 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="assets/aos-master/dist/aos.css">
     <link
       rel="stylesheet"
       type="text/css"
@@ -146,8 +147,8 @@
       <div class="overlay" id="overlay"></div>
     </header>
 
-    <h1>STRUKTUR HMJTI</h1>
-    <section class="struktur-container">
+    <h1 data-aos="fade-in">STRUKTUR HMJTI</h1>
+    <section class="struktur-container" data-aos="fade-up">
       <div class="slider">
         <div class="slides">
           <div class="card">
@@ -271,6 +272,13 @@
     <!-- <script src="assets/js/script.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="assets/aos-master/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1500,
+        once: true,
+      })
+    </script>
     <script>
       // LOADING SCREEN
       (function () {
