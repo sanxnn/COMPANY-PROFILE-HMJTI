@@ -1,0 +1,167 @@
+/* ==========================
+   ASPIRASI PAGE — HMJTI
+   Clean, Trustworthy, Consistent Theme
+========================== */
+
+.aspirasi {
+  padding: 60px 20px;
+  background-color: #f8f9fa;
+}
+
+.aspirasi h2 {
+  font-size: 2.6rem;
+  color: #0a2a87;
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 700;
+  position: relative;
+}
+
+.aspirasi h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 4px;
+  background: #0a2a87;
+  border-radius: 2px;
+}
+
+.form-container {
+  max-width: 800px;
+  width: 90%;
+  margin: 0 auto;
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.input-group {
+  margin-bottom: 22px;
+}
+
+.aspirasi input,
+.aspirasi textarea {
+  width: 100%;
+  padding: 14px 20px;
+  border: 1px solid #d1d9e6;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  transition: all 0.3s;
+  background: #fafbff;
+}
+
+.aspirasi input:focus,
+.aspirasi textarea:focus {
+  outline: none;
+  border-color: #0a2a87;
+  box-shadow: 0 0 0 3px rgba(10, 42, 135, 0.15);
+  background: white;
+}
+
+.aspirasi .input-group textarea {
+  min-height: 180px;
+  resize: vertical;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+.half {
+  flex: 1;
+}
+
+/* Submit Button */
+.tombol-kirim {
+  background: linear-gradient(135deg, #0a2a87, #061537);
+  color: white;
+  padding: 14px 40px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(10, 42, 135, 0.25);
+  display: block;
+  margin: 30px auto 0;
+  width: fit-content;
+}
+
+.tombol-kirim:hover {
+  background: linear-gradient(135deg, #061537, #000000);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(10, 42, 135, 0.35);
+}
+
+.tombol-kirim:active {
+  transform: translateY(0);
+}
+
+.tombol-kirim:focus {
+  outline: 2px solid #0a2a87;
+  outline-offset: 4px;
+}
+
+/* Optional: Info Box */
+.aspirasi-info {
+  background: linear-gradient(135deg, #eaf2ff, #dde9ff);
+  border: 1px solid #cce0ff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 20px;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.aspirasi-info h4 {
+  color: #0a2a87;
+  margin-top: 0;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .aspirasi h2 {
+    font-size: 2.1rem;
+  }
+
+  .form-container {
+    padding: 30px 20px;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .tombol-kirim {
+    width: 100%;
+    padding: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .aspirasi {
+    padding: 40px 15px;
+  }
+
+  .aspirasi h2 {
+    font-size: 1.8rem;
+  }
+
+  .aspirasi h2::after {
+    width: 60px;
+  }
+
+  .form-container {
+    padding: 25px 15px;
+  }
+}

@@ -1,0 +1,151 @@
+/* ==========================
+   DEPARTEMEN PAGE — HMJTI
+   Modern, Consistent, Professional
+========================== */
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* Title Section */
+.departemen {
+  padding: 60px 0 80px;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #0a2a87;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 4px;
+  background: #0a2a87;
+  border-radius: 2px;
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Card Styling */
+.card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(10, 42, 135, 0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.card:hover img {
+  transform: scale(1.03);
+}
+
+/* Button */
+.btn-detail {
+  display: block;
+  width: 180px;
+  margin: 20px auto;
+  padding: 12px 0;
+  background: linear-gradient(135deg, #0a2a87, #061537);
+  color: white;
+  text-align: center;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(10, 42, 135, 0.25);
+  border: none;
+}
+
+.btn-detail:hover {
+  background: linear-gradient(135deg, #061537, #000000);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(10, 42, 135, 0.35);
+}
+
+.btn-detail i {
+  margin-left: 6px;
+  transition: transform 0.2s;
+}
+
+.btn-detail:hover i {
+  transform: translateX(3px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.2rem;
+  }
+
+  .grid {
+    gap: 25px;
+  }
+
+  .card img {
+    height: 200px;
+  }
+
+  .btn-detail {
+    width: 150px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .departemen {
+    padding: 50px 0 60px;
+  }
+
+  .title {
+    font-size: 1.9rem;
+  }
+
+  .title::after {
+    width: 60px;
+  }
+
+  .card img {
+    height: 180px;
+  }
+
+  .btn-detail {
+    width: 140px;
+    padding: 10px 0;
+    font-size: 0.9rem;
+  }
+}

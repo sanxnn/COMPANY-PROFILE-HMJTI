@@ -1,0 +1,163 @@
+/* ==========================
+   DETAIL DEPARTEMEN — HMJTI
+   Template reusable untuk semua departemen
+========================== */
+
+.detail-departemen {
+  padding: 60px 0 80px;
+  background-color: #f8f9fa;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Judul Departemen */
+.judul-departemen {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #0a2a87;
+  text-align: center;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.judul-departemen::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 4px;
+  background: #0a2a87;
+  border-radius: 2px;
+}
+
+/* Deskripsi */
+.deskripsi-departemen {
+  max-width: 900px;
+  margin: 0 auto 50px;
+  font-size: 1.1rem;
+  line-height: 1.75;
+  color: #555;
+  text-align: center;
+}
+
+/* Tugas Section */
+.tugas-section {
+  margin-top: 50px;
+}
+
+.tugas-section h3 {
+  font-size: 1.8rem;
+  color: #0a2a87;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+/* Grid Tugas */
+.grid-tugas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.card-tugas {
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-tugas::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 100%;
+  background: #0a2a87;
+}
+
+.card-tugas:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(10, 42, 135, 0.15);
+}
+
+.card-tugas h4 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #0a2a87;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-tugas h4::before {
+  content: '•';
+  color: #ffcc00;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.card-tugas p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .judul-departemen {
+    font-size: 2.2rem;
+  }
+
+  .deskripsi-departemen {
+    font-size: 1.05rem;
+  }
+
+  .tugas-section h3 {
+    font-size: 1.6rem;
+  }
+
+  .grid-tugas {
+    grid-template-columns: 1fr;
+  }
+
+  .card-tugas {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .detail-departemen {
+    padding: 50px 0 60px;
+  }
+
+  .judul-departemen {
+    font-size: 1.9rem;
+  }
+
+  .judul-departemen::after {
+    width: 60px;
+  }
+
+  .card-tugas h4 {
+    font-size: 1.25rem;
+  }
+
+  .card-tugas p {
+    font-size: 0.95rem;
+  }
+}

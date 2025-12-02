@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/fontawesome-free-7.1.0-web/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.struktur.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+  <!-- navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html">
+          <img src="assets/images/logo_hmj.png" alt="HMJTI" />
+        </a>
+        <span>HMJTI</span>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Beranda</a></li>
+
+        <li class="dropdown">
+          <a href="#">Tentang ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="sejarah.html">Sejarah</a></li>
+            <li><a href="visi-misi.html">Visi Misi</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#">Departemen ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="struktur.html">Struktur</a></li>
+            <li><a href="departemen.html">Departemen</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#">Informasi ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="berita.html">Berita</a></li>
+            <li><a href="beasiswa.html">Beasiswa</a></li>
+            <li><a href="lomba.html">Lomba</a></li>
+          </ul>
+        </li>
+
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="aspirasi.html">Aspirasi</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- hero -->
+
+  <h1 style="text-align: center; padding-top: 60px;">STRUKTUR HMJTI</h1>
+  <section class="struktur-container">
+
+    <div class="arrow">&#10094;</div>
+    <div class="slider">
+      <div class="slides">
+
+        <div class="card">
+          <img src="/assets/images/coba 1.png" alt="Ketua" />
+          <div class="nama">TIARA AGUSTINA PUTRI WULANDARI</div>
+          <div class="jabatan">KETUA</div>
+        </div>
+
+        <div class="card">
+          <img src="/assets/images/wakil_ketua 1.png" alt="Wakil Ketua" />
+          <div class="nama">ACHMAD SOFYAN HAIKI</div>
+          <div class="jabatan">WAKIL KETUA</div>
+        </div>
+
+        <div class="card">
+          <img src="/assets/images/sekretaris1 1.png" alt="Sekretaris" />
+          <div class="nama">LIANA DEWI TRIANTOKO</div>
+          <div class="jabatan">SEKRETARIS 1</div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="arrow">&#10095;</div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <!-- Kolom About HMJTI -->
+        <div class="footer-col about-hmjti">
+          <div class="footer-logo">
+            <img src="assets/images/logo_hmj.png" alt="Logo HMJTI" class="logo-img" />
+            <span>HMJTI</span>
+          </div>
+          <p>
+            HMJTI adalah Himpunan Mahasiswa Jurusan Teknologi Informasi. Kami
+            merancang, membangun, dan mengelola solusi teknologi terbaik untuk
+            kemajuan pendidikan dan pengembangan diri.
+          </p>
+        </div>
+
+        <!-- Kolom Kontak -->
+        <div class="footer-col contact-info">
+          <h2>KONTAK</h2>
+          <p>
+            Jl. Mastrip, PO.BOX 164 Sumberejo<br />Jember Jawa Timur Indonesia
+            68101.
+          </p>
+          <p>HP: 0856-0777-1138</p>
+          <p>
+            Email: <a href="mailto:hmjti@polije.ac.id">hmjti@polije.ac.id</a>
+          </p>
+        </div>
+
+        <!-- Kolom Sosial Media -->
+        <div class="footer-col social-media">
+          <h2>SOSIAL MEDIA</h2>
+          <ul>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i> @hmjti_polije</a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-tiktok"></i> @hmjti_polije</a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-youtube"></i> @HMJ TI</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="copyright">
+    <p>Copyright © 2025 Design & Developed</p>
+  </div>
+  <script src="assets/js/script.js"></script>
+  <script>
+    $(document).ready(function () {
+
+      const $slides = $(".slides");
+      const $cards = $(".card");
+      const $prev = $(".arrow").first();
+      const $next = $(".arrow").last();
+
+      let index = 0;
+      const total = $cards.length; // 3 card total
+      const moveWidth = $(".card").outerWidth(true); // lebar card otomatis
+
+      // Pastikan slides jadi flex
+      $slides.css({
+        display: "flex",
+        transition: "transform 0.5s ease"
+      });
+
+      // Pastikan slider clip/overflow hidden
+      $(".slider").css({
+        overflow: "hidden"
+      });
+
+      function updateSlide() {
+        $slides.css("transform", `translateX(-${index * moveWidth}px)`);
+      }
+
+      // NEXT
+      $next.on("click", function () {
+        index++;
+        if (index >= total) index = 0; // looping
+        updateSlide();
+      });
+
+      // PREV
+      $prev.on("click", function () {
+        index--;
+        if (index < 0) index = total - 1; // looping
+        updateSlide();
+      });
+
+      // Auto Slide (boleh matiin kalau mau)
+      setInterval(() => $next.click(), 3000);
+
+    });
+  </script>
+
+
+</body>
+
+</html>

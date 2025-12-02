@@ -1,0 +1,240 @@
+/* ==========================
+   AOM 11.0 — NIDJI COLLAB
+   HMJTI Informasi Detail Page
+========================== */
+
+.container {
+  max-width: 1100px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* --- AOM Header --- */
+.aom-header {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.65)), 
+              url('../images/informasi/nidji.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  border-radius: 16px;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.aom-content h1:first-child {
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.aom-content h1:last-child {
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin-top: 10px;
+  opacity: 0.9;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.aom-content h1 strong {
+  color: #ffcc00;
+}
+
+/* --- Main Layout --- */
+.main-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+/* --- Left Column: Content --- */
+.content-column {
+  background: white;
+  border-radius: 16px;
+  padding: 35px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.content-column p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.content-column p strong {
+  color: #0a2a87;
+  font-weight: 700;
+}
+
+.content-column hr {
+  border: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #0a2a87, transparent);
+  margin: 30px 0;
+}
+
+.content-column .playlist-link {
+  display: block;
+  background: rgba(10, 42, 135, 0.08);
+  padding: 14px 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #0a2a87;
+  font-weight: 600;
+  margin: 25px 0;
+  transition: all 0.2s;
+  border-left: 4px solid #0a2a87;
+}
+
+.content-column .playlist-link:hover {
+  background: rgba(10, 42, 135, 0.15);
+  transform: translateX(4px);
+}
+
+.content-column .playlist-link i {
+  margin-right: 8px;
+}
+
+/* Schedule List */
+.schedule-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.schedule-list li {
+  padding: 12px 0 12px 40px;
+  position: relative;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.schedule-list li::before {
+  content: '●';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.4rem;
+}
+
+.schedule-list li.online::before {
+  color: #28a745;
+}
+
+.schedule-list li.offline::before {
+  color: #dc3545;
+}
+
+/* --- Right Column: Sidebar --- */
+.sidebar-column {
+  background: white;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  height: fit-content;
+}
+
+.sidebar-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #0a2a87;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e0e5f0;
+}
+
+.sidebar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-nav li {
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0a2a87;
+}
+
+.sidebar-nav li::before {
+  content: '▹';
+  margin-right: 8px;
+  color: #ffcc00;
+}
+
+/* Dresscode Colors */
+.dresscode-note {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-size: 0.95rem;
+}
+
+.dresscode-colors {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.color-box {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+}
+
+.color-navy { background: #0a2a87; }
+.color-cream { background: #fdf4e6; }
+.color-coksu { background: #8b4513; }
+
+/* Responsive */
+@media (max-width: 900px) {
+  .main-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .aom-header {
+    padding: 50px 20px;
+  }
+
+  .aom-content h1:first-child {
+    font-size: 2.4rem;
+  }
+
+  .aom-content h1:last-child {
+    font-size: 1.4rem;
+  }
+
+  .content-column,
+  .sidebar-column {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .aom-header {
+    padding: 40px 15px;
+  }
+
+  .aom-content h1:first-child {
+    font-size: 2rem;
+  }
+
+  .schedule-list li {
+    font-size: 1rem;
+    padding-left: 35px;
+  }
+
+  .dresscode-colors {
+    flex-wrap: wrap;
+  }
+}

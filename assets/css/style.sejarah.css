@@ -1,0 +1,101 @@
+/* ================= HERO SEJARAH ================= */
+.sej-hero {
+  width: 100%;
+  background: linear-gradient(145deg, #dce5ff, #c6d4ff);
+  padding: 70px 20px;
+  border-radius: 25px;
+  margin: 120px auto 40px;
+  max-width: 1200px;
+}
+
+.sej-hero-content {
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+}
+
+.sej-subtitle {
+  background: #b5c7ff;
+  padding: 6px 15px;
+  border-radius: 20px;
+  font-weight: 600;
+  color: #333;
+  font-size: 13px;
+}
+
+.sej-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin: 15px 0 10px;
+}
+
+.sej-desc {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 25px;
+}
+
+.sej-btn {
+  background: #6e7ff3;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 20px;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.sej-btn:hover {
+  background: #5064d8;
+}
+
+/* ================= PERJALANAN SECTION ================= */
+.sej-section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.sej-heading {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+.sej-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.sej-card p {
+  line-height: 1.7;
+  font-size: 14px;
+  margin-bottom: 18px;
+  color: #333;
+}
+
+/* ================= ANIMASI REVEAL ================= */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1.3s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-item {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1.6s ease;
+}
+
+.reveal-item.active {
+  opacity: 1;
+  transform: translateY(0);
+}

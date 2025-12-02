@@ -1,0 +1,167 @@
+/* ========================== COMPETITION DETAIL PAGE HMJTI - LOMBA DETAIL ========================== */
+.competition-detail {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.competition-detail h2 {
+  font-size: 2.8rem;
+  color: #0a2a87;
+  margin-bottom: 50px;
+  text-align: center;
+  position: relative;
+  font-weight: 700;
+}
+.competition-detail h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: #0a2a87;
+  border-radius: 2px;
+} /* Main Card */
+.main-card-lomba {
+  display: flex;
+  gap: 30px;
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 50px;
+  transition: transform 0.3s ease;
+}
+.main-card-lomba:hover {
+  transform: translateY(-4px);
+}
+.card-image-box {
+  flex-shrink: 0;
+  width: 220px;
+}
+.card-image-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.card-text-box h3 {
+  font-size: 1.8rem;
+  color: #0a2a87;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.card-text-box p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #444;
+  text-align: justify;
+} /* Jenis Lomba Section */
+.jenis-lomba {
+  background: white;
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+.tag-label {
+  display: inline-block;
+  background: linear-gradient(135deg, #0a2a87, #061537);
+  color: white;
+  padding: 8px 24px;
+  border-radius: 30px;
+  margin-bottom: 25px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+.lomba-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.lomba-list li {
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 1px dashed #eee;
+}
+.lomba-list li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.lomba-list h4 {
+  font-size: 1.35rem;
+  color: #0a2a87;
+  margin-bottom: 10px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.lomba-list h4::before {
+  content: "•";
+  color: #0a2a87;
+  font-size: 1.8rem;
+  line-height: 1;
+}
+.lomba-list p {
+  margin-left: 0;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: #555;
+}
+.link-info {
+  text-align: center;
+  margin-top: 30px;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.link-info a {
+  color: #0a2a87;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 3px;
+  transition: all 0.2s;
+}
+.link-info a:hover {
+  border-bottom-color: #0a2a87;
+  color: #061537;
+} /* RESPONSIVE */
+@media (max-width: 992px) {
+  .main-card-lomba {
+    flex-direction: column;
+    text-align: center;
+  }
+  .card-image-box {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .card-text-box p {
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  .competition-detail h2 {
+    font-size: 2.2rem;
+  }
+  .competition-detail h2::after {
+    width: 60px;
+  }
+  .main-card-lomba,
+  .jenis-lomba {
+    padding: 20px;
+  }
+  .card-image-box {
+    max-width: 100%;
+  }
+  .lomba-list h4 {
+    font-size: 1.2rem;
+  }
+  .tag-label {
+    padding: 6px 20px;
+    font-size: 1rem;
+  }
+}

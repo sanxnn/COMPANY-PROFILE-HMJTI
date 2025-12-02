@@ -1,0 +1,294 @@
+/* ==========================
+   LKMM PRA-TD 2025 — HMJTI
+   Informasi Detail Page
+========================== */
+
+.container {
+  max-width: 1100px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* --- LKMM Header --- */
+.lkmm-header {
+  background: linear-gradient(rgba(10, 42, 135, 0.75), rgba(6, 21, 55, 0.9)),
+    url("../images/informasi/lkmm.jpg") center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  border-radius: 16px;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.lkmm-content h1:first-child {
+  font-size: 3.2rem;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.lkmm-content h1:last-child {
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin-top: 10px;
+  opacity: 0.9;
+  letter-spacing: 1px;
+  line-height: 1.4;
+}
+
+/* --- Main Layout --- */
+.main-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+/* --- Left Column: Content --- */
+.content-column {
+  background: white;
+  border-radius: 16px;
+  padding: 35px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.content-column p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 18px;
+}
+
+.content-column p strong {
+  color: #0a2a87;
+  font-weight: 600;
+}
+
+.content-column hr {
+  border: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #0a2a87, transparent);
+  margin: 30px 0;
+}
+
+/* Definition List */
+.definition-list {
+  padding-left: 25px;
+  margin: 20px 0;
+}
+
+.definition-list li {
+  margin-bottom: 12px;
+  position: relative;
+  font-size: 1.02rem;
+  color: #444;
+}
+
+.definition-list li::before {
+  content: "✓";
+  position: absolute;
+  left: -25px;
+  top: 2px;
+  color: #0a2a87;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.level-list {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 25px 0;
+  border-left: 4px solid #0a2a87;
+}
+
+.level-list h4 {
+  color: #0a2a87;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.level-list li {
+  margin-bottom: 10px;
+  margin-left: 15px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.level-list li::before {
+  /* content: "→"; */
+  color: #061537;
+  margin-right: 6px;
+}
+
+/* Schedule List */
+.schedule-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.schedule-list li {
+  padding: 12px 0 12px 40px;
+  position: relative;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.schedule-list li::before {
+  content: "●";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.4rem;
+}
+
+.schedule-list li.online::before {
+  color: #17a2b8;
+}
+
+.schedule-list li.offline::before {
+  color: #dc3545;
+}
+
+/* Callout Box */
+.callout-box {
+  background: linear-gradient(135deg, #eaf2ff, #dde9ff);
+  border: 1px solid #cce0ff;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 25px 0;
+}
+
+.callout-box h4 {
+  color: #0a2a87;
+  margin-top: 0;
+  font-size: 1.3rem;
+}
+
+.callout-box .location {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  color: #061537;
+  margin-top: 10px;
+}
+
+.callout-box .location i {
+  color: #0a2a87;
+}
+
+/* --- Right Column: Sidebar --- */
+.sidebar-column {
+  background: white;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  height: fit-content;
+}
+
+.sidebar-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #0a2a87;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e0e5f0;
+}
+
+.sidebar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-nav li {
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0a2a87;
+}
+
+.sidebar-nav li::before {
+  content: "▹";
+  margin-right: 8px;
+  color: #0a2a87;
+}
+
+/* Benefit Tags */
+.benefits {
+  margin-top: 25px;
+}
+
+.benefits h4 {
+  color: #0a2a87;
+  margin-bottom: 12px;
+}
+
+.tag {
+  display: inline-block;
+  background: rgba(10, 42, 135, 0.1);
+  color: #0a2a87;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .main-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .lkmm-header {
+    padding: 50px 20px;
+  }
+
+  .lkmm-content h1:first-child {
+    font-size: 2.6rem;
+  }
+
+  .lkmm-content h1:last-child {
+    font-size: 1.4rem;
+  }
+
+  .content-column,
+  .sidebar-column {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .lkmm-header {
+    padding: 40px 15px;
+  }
+
+  .lkmm-content h1:first-child {
+    font-size: 2.1rem;
+  }
+
+  .lkmm-content h1:last-child {
+    font-size: 1.25rem;
+  }
+
+  .schedule-list li {
+    font-size: 1rem;
+    padding-left: 35px;
+  }
+
+  .tag {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 6px;
+  }
+}
