@@ -21,7 +21,7 @@
     <div id="loading-screen">
       <div class="spinner"></div>
     </div>
-    <!-- navbar -->
+    <!-- Navbar -->
     <header>
       <nav class="navbar">
         <div class="logo">
@@ -31,9 +31,9 @@
           <span>HMJTI</span>
         </div>
 
+        <!-- Desktop Menu -->
         <ul class="nav-links">
           <li><a href="index.html">Beranda</a></li>
-
           <li class="dropdown">
             <a href="#">Tentang ▾</a>
             <ul class="dropdown-menu">
@@ -41,7 +41,6 @@
               <li><a href="visi-misi.html">Visi Misi</a></li>
             </ul>
           </li>
-
           <li class="dropdown">
             <a href="#">Departemen ▾</a>
             <ul class="dropdown-menu">
@@ -49,7 +48,6 @@
               <li><a href="departemen.html">Departemen</a></li>
             </ul>
           </li>
-
           <li class="dropdown">
             <a href="#">Informasi ▾</a>
             <ul class="dropdown-menu">
@@ -58,68 +56,140 @@
               <li><a href="lomba.html">Lomba</a></li>
             </ul>
           </li>
-
           <li><a href="galeri.html">Galeri</a></li>
           <li><a href="aspirasi.html">Aspirasi</a></li>
           <li><a href="kontak.html">Kontak</a></li>
         </ul>
+
+        <!-- Hamburger for Mobile -->
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </nav>
+
+      <!-- Mobile Sidebar Menu (Slide-in from left) -->
+      <div class="mobile-sidebar" id="mobile-sidebar">
+        <div class="sidebar-header">
+          <div class="sidebar-logo">
+            <img src="assets/images/logo_hmj.png" alt="HMJTI" />
+            <span>HMJTI</span>
+          </div>
+          <button class="close-btn" id="close-sidebar">×</button>
+        </div>
+        <div class="sidebar-content">
+          <ul class="sidebar-nav">
+            <li>
+              <a href="index.html"><i class="fas fa-home"></i> Beranda</a>
+            </li>
+
+            <li class="mobile-dropdown">
+              <a href="#" class="dropdown-toggle"
+                ><i class="fas fa-book"></i> Tentang</a
+              >
+              <ul class="dropdown-menu mobile-dropdown-menu">
+                <li><a href="sejarah.html">Sejarah</a></li>
+                <li><a href="visi-misi.html">Visi Misi</a></li>
+              </ul>
+            </li>
+
+            <li class="mobile-dropdown">
+              <a href="#" class="dropdown-toggle"
+                ><i class="fas fa-users"></i> Departemen</a
+              >
+              <ul class="dropdown-menu mobile-dropdown-menu">
+                <li><a href="struktur.html">Struktur</a></li>
+                <li><a href="departemen.html">Departemen</a></li>
+              </ul>
+            </li>
+
+            <li class="mobile-dropdown">
+              <a href="#" class="dropdown-toggle"
+                ><i class="fas fa-bullhorn"></i> Informasi</a
+              >
+              <ul class="dropdown-menu mobile-dropdown-menu">
+                <li><a href="berita.html">Berita</a></li>
+                <li><a href="beasiswa.html">Beasiswa</a></li>
+                <li><a href="lomba.html">Lomba</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="galeri.html"><i class="fas fa-images"></i> Galeri</a>
+            </li>
+            <li>
+              <a href="aspirasi.html"
+                ><i class="fas fa-comment"></i> Aspirasi</a
+              >
+            </li>
+            <li>
+              <a href="kontak.html"><i class="fas fa-envelope"></i> Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Overlay untuk close saat klik luar -->
+      <div class="overlay" id="overlay"></div>
     </header>
 
     <!-- hero -->
 
     <section class="detail-departemen">
-  <div class="container">
-    <h1 class="judul-departemen">DEPARTEMEN KOMINFO</h1>
+      <div class="container">
+        <h1 class="judul-departemen">DEPARTEMEN KOMINFO</h1>
 
-    <p class="deskripsi-departemen">
-      Departemen Kominfo adalah bagian dari organisasi himpunan jurusan yang
-      fokus pada pengelolaan informasi dan komunikasi digital HMJTI.
-      Bertanggung jawab dalam mengelola website, media sosial, dokumentasi
-      kegiatan, serta penyebaran informasi internal & eksternal secara
-      profesional dan kreatif.
-    </p>
+        <p class="deskripsi-departemen">
+          Departemen Kominfo adalah bagian dari organisasi himpunan jurusan yang
+          fokus pada pengelolaan informasi dan komunikasi digital HMJTI.
+          Bertanggung jawab dalam mengelola website, media sosial, dokumentasi
+          kegiatan, serta penyebaran informasi internal & eksternal secara
+          profesional dan kreatif.
+        </p>
 
-    <div class="tugas-section">
-      <h3>Tugas & Fungsi</h3>
-      <div class="grid-tugas">
-        <div class="card-tugas">
-          <h4>PETUGAS MEDIA SOSIAL</h4>
-          <p>
-            Mengelola akun Instagram, TikTok, dan YouTube HMJTI secara konsisten
-            untuk menyampaikan informasi kegiatan, prestasi, dan edukasi secara
-            menarik dan interaktif.
-          </p>
-        </div>
+        <div class="tugas-section">
+          <h3>Tugas & Fungsi</h3>
+          <div class="grid-tugas">
+            <div class="card-tugas">
+              <h4>PETUGAS MEDIA SOSIAL</h4>
+              <p>
+                Mengelola akun Instagram, TikTok, dan YouTube HMJTI secara
+                konsisten untuk menyampaikan informasi kegiatan, prestasi, dan
+                edukasi secara menarik dan interaktif.
+              </p>
+            </div>
 
-        <div class="card-tugas">
-          <h4>OPTIMALISASI WEBSITE</h4>
-          <p>
-            Memastikan website HMJTI selalu update, responsif, dan mudah diakses
-            sebagai pusat informasi digital resmi bagi mahasiswa TI Polije.
-          </p>
-        </div>
+            <div class="card-tugas">
+              <h4>OPTIMALISASI WEBSITE</h4>
+              <p>
+                Memastikan website HMJTI selalu update, responsif, dan mudah
+                diakses sebagai pusat informasi digital resmi bagi mahasiswa TI
+                Polije.
+              </p>
+            </div>
 
-        <div class="card-tugas">
-          <h4>PUSAT INFORMASI DIGITAL</h4>
-          <p>
-            Mengumpulkan dan menyebarkan informasi lomba IT/umum, beasiswa,
-            seminar, pelatihan, dan peluang magang melalui channel digital HMJTI.
-          </p>
-        </div>
+            <div class="card-tugas">
+              <h4>PUSAT INFORMASI DIGITAL</h4>
+              <p>
+                Mengumpulkan dan menyebarkan informasi lomba IT/umum, beasiswa,
+                seminar, pelatihan, dan peluang magang melalui channel digital
+                HMJTI.
+              </p>
+            </div>
 
-        <div class="card-tugas">
-          <h4>DOKUMENTASI & REKAP</h4>
-          <p>
-            Mendokumentasikan kegiatan HMJTI dalam bentuk foto/video, menyusun
-            notulen rapat, serta arsip digital untuk pertanggungjawaban dan
-            dokumentasi sejarah organisasi.
-          </p>
+            <div class="card-tugas">
+              <h4>DOKUMENTASI & REKAP</h4>
+              <p>
+                Mendokumentasikan kegiatan HMJTI dalam bentuk foto/video,
+                menyusun notulen rapat, serta arsip digital untuk
+                pertanggungjawaban dan dokumentasi sejarah organisasi.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
     <!-- ================= FOOTER ================= -->
     <footer class="footer">

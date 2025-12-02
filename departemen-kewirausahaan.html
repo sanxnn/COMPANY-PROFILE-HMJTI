@@ -5,8 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Departemen Kewirausahaan - HMJTI Polije</title>
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/fontawesome-free-7.1.0-web/css/all.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="assets/fontawesome-free-7.1.0-web/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/css/detail.departemen.css" />
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   </head>
@@ -16,7 +22,7 @@
       <div class="spinner"></div>
     </div>
 
-    <!-- navbar -->
+    <!-- Navbar -->
     <header>
       <nav class="navbar">
         <div class="logo">
@@ -25,6 +31,8 @@
           </a>
           <span>HMJTI</span>
         </div>
+
+        <!-- Desktop Menu -->
         <ul class="nav-links">
           <li><a href="index.html">Beranda</a></li>
           <li class="dropdown">
@@ -53,7 +61,78 @@
           <li><a href="aspirasi.html">Aspirasi</a></li>
           <li><a href="kontak.html">Kontak</a></li>
         </ul>
+
+        <!-- Hamburger for Mobile -->
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </nav>
+
+      <!-- Mobile Sidebar Menu (Slide-in from left) -->
+      <div class="mobile-sidebar" id="mobile-sidebar">
+        <div class="sidebar-header">
+          <div class="sidebar-logo">
+            <img src="assets/images/logo_hmj.png" alt="HMJTI" />
+            <span>HMJTI</span>
+          </div>
+          <button class="close-btn" id="close-sidebar">×</button>
+        </div>
+        <div class="sidebar-content">
+          <ul class="sidebar-nav">
+            <li>
+              <a href="index.html"><i class="fas fa-home"></i> Beranda</a>
+            </li>
+
+            <li class="mobile-dropdown">
+              <a href="#" class="dropdown-toggle"
+                ><i class="fas fa-book"></i> Tentang</a
+              >
+              <ul class="dropdown-menu mobile-dropdown-menu">
+                <li><a href="sejarah.html">Sejarah</a></li>
+                <li><a href="visi-misi.html">Visi Misi</a></li>
+              </ul>
+            </li>
+
+            <li class="mobile-dropdown">
+              <a href="#" class="dropdown-toggle"
+                ><i class="fas fa-users"></i> Departemen</a
+              >
+              <ul class="dropdown-menu mobile-dropdown-menu">
+                <li><a href="struktur.html">Struktur</a></li>
+                <li><a href="departemen.html">Departemen</a></li>
+              </ul>
+            </li>
+
+            <li class="mobile-dropdown">
+              <a href="#" class="dropdown-toggle"
+                ><i class="fas fa-bullhorn"></i> Informasi</a
+              >
+              <ul class="dropdown-menu mobile-dropdown-menu">
+                <li><a href="berita.html">Berita</a></li>
+                <li><a href="beasiswa.html">Beasiswa</a></li>
+                <li><a href="lomba.html">Lomba</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="galeri.html"><i class="fas fa-images"></i> Galeri</a>
+            </li>
+            <li>
+              <a href="aspirasi.html"
+                ><i class="fas fa-comment"></i> Aspirasi</a
+              >
+            </li>
+            <li>
+              <a href="kontak.html"><i class="fas fa-envelope"></i> Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Overlay untuk close saat klik luar -->
+      <div class="overlay" id="overlay"></div>
     </header>
 
     <!-- Konten Utama -->
@@ -64,8 +143,8 @@
         <p class="deskripsi-departemen">
           Departemen Kewirausahaan adalah wadah pengembangan jiwa wirausaha
           mahasiswa Teknologi Informasi Politeknik Negeri Jember. Departemen ini
-          bertugas mendorong, membina, dan memfasilitasi lahirnya wirausaha
-          muda berbasis teknologi melalui pelatihan, inkubasi bisnis, kolaborasi
+          bertugas mendorong, membina, dan memfasilitasi lahirnya wirausaha muda
+          berbasis teknologi melalui pelatihan, inkubasi bisnis, kolaborasi
           dengan UMKM, serta penciptaan ekosistem kewirausahaan yang mendukung
           pertumbuhan startup mahasiswa TI Polije.
         </p>
@@ -103,18 +182,19 @@
             <div class="card-tugas">
               <h4>EVENT KEWIRAUSAHAAN</h4>
               <p>
-                Mengadakan kompetisi bisnis seperti <strong>TI Business Plan
-                Competition</strong>, bazaar produk mahasiswa, serta talkshow
-                bersama founder startup sukses (alumni & nasional).
+                Mengadakan kompetisi bisnis seperti
+                <strong>TI Business Plan Competition</strong>, bazaar produk
+                mahasiswa, serta talkshow bersama founder startup sukses (alumni
+                & nasional).
               </p>
             </div>
 
             <div class="card-tugas">
               <h4>AKSES PENDANAAN & INVESTOR</h4>
               <p>
-                Memfasilitasi akses ke program pembiayaan seperti PKM-K, Wirausaha
-                Pemula Kemenkop, serta menghubungkan startup mahasiswa dengan
-                angel investor & komunitas pendiri startup Jawa Timur.
+                Memfasilitasi akses ke program pembiayaan seperti PKM-K,
+                Wirausaha Pemula Kemenkop, serta menghubungkan startup mahasiswa
+                dengan angel investor & komunitas pendiri startup Jawa Timur.
               </p>
             </div>
 
@@ -122,23 +202,23 @@
               <h4>PENGEMBANGAN PRODUK TI KOMERSIAL</h4>
               <p>
                 Mendorong pembuatan produk digital yang siap jual: aplikasi,
-                website khusus industri, tools otomatisasi, hingga konten digital
-                premium — dengan pendampingan lisensi & branding.
+                website khusus industri, tools otomatisasi, hingga konten
+                digital premium — dengan pendampingan lisensi & branding.
               </p>
             </div>
           </div>
         </div>
 
         <!-- Program Unggulan -->
-        <div class="tugas-section" style="margin-top: 60px;">
+        <div class="tugas-section" style="margin-top: 60px">
           <h3>Program Unggulan</h3>
           <div class="grid-tugas">
             <div class="card-tugas">
               <h4>TI STARTUP INCUBATOR</h4>
               <p>
-                Program 3 bulan intensif untuk 5–10 tim terpilih: mentoring bisnis
-                & teknis, akses mentor alumni founder, demo day ke investor, dan
-                seed fund hingga Rp5.000.000 per tim.
+                Program 3 bulan intensif untuk 5–10 tim terpilih: mentoring
+                bisnis & teknis, akses mentor alumni founder, demo day ke
+                investor, dan seed fund hingga Rp5.000.000 per tim.
               </p>
             </div>
 
@@ -172,23 +252,40 @@
         </div>
 
         <!-- Kolaborasi Strategis -->
-        <div class="tugas-section" style="margin-top: 60px;">
+        <div class="tugas-section" style="margin-top: 60px">
           <h3>Mitra Strategis</h3>
           <div class="grid-tugas">
-            <div class="card-tugas" style="text-align: center; padding: 30px 20px;">
-              <h4 style="margin-bottom: 15px;">POLINEMA BUSINESS CENTER</h4>
-              <p>Fasilitas inkubator & co-working space Polije untuk startup mahasiswa</p>
+            <div
+              class="card-tugas"
+              style="text-align: center; padding: 30px 20px"
+            >
+              <h4 style="margin-bottom: 15px">POLINEMA BUSINESS CENTER</h4>
+              <p>
+                Fasilitas inkubator & co-working space Polije untuk startup
+                mahasiswa
+              </p>
             </div>
-            <div class="card-tugas" style="text-align: center; padding: 30px 20px;">
-              <h4 style="margin-bottom: 15px;">DINAS KOPERASI & UMKM JEMBER</h4>
+            <div
+              class="card-tugas"
+              style="text-align: center; padding: 30px 20px"
+            >
+              <h4 style="margin-bottom: 15px">DINAS KOPERASI & UMKM JEMBER</h4>
               <p>Pendampingan UMKM & akses program pembiayaan daerah</p>
             </div>
-            <div class="card-tugas" style="text-align: center; padding: 30px 20px;">
-              <h4 style="margin-bottom: 15px;">GOJEK X POLINEMA</h4>
-              <p>Kolaborasi pelatihan digital & akses mitra driver/gofood UMKM</p>
+            <div
+              class="card-tugas"
+              style="text-align: center; padding: 30px 20px"
+            >
+              <h4 style="margin-bottom: 15px">GOJEK X POLINEMA</h4>
+              <p>
+                Kolaborasi pelatihan digital & akses mitra driver/gofood UMKM
+              </p>
             </div>
-            <div class="card-tugas" style="text-align: center; padding: 30px 20px;">
-              <h4 style="margin-bottom: 15px;">STARTUP JEMBER COMMUNITY</h4>
+            <div
+              class="card-tugas"
+              style="text-align: center; padding: 30px 20px"
+            >
+              <h4 style="margin-bottom: 15px">STARTUP JEMBER COMMUNITY</h4>
               <p>Networking dengan founder startup lokal & regional</p>
             </div>
           </div>
@@ -202,7 +299,11 @@
         <div class="footer-grid">
           <div class="footer-col about-hmjti">
             <div class="footer-logo">
-              <img src="assets/images/logo_hmj.png" alt="Logo HMJTI" class="logo-img" />
+              <img
+                src="assets/images/logo_hmj.png"
+                alt="Logo HMJTI"
+                class="logo-img"
+              />
               <span>HMJTI</span>
             </div>
             <p>
@@ -213,16 +314,27 @@
           </div>
           <div class="footer-col contact-info">
             <h2>KONTAK</h2>
-            <p>Jl. Mastrip, PO.BOX 164 Sumberejo<br />Jember Jawa Timur Indonesia 68101.</p>
+            <p>
+              Jl. Mastrip, PO.BOX 164 Sumberejo<br />Jember Jawa Timur Indonesia
+              68101.
+            </p>
             <p>HP: 0856-0777-1138</p>
-            <p>Email: <a href="mailto:hmjti@polije.ac.id">hmjti@polije.ac.id</a></p>
+            <p>
+              Email: <a href="mailto:hmjti@polije.ac.id">hmjti@polije.ac.id</a>
+            </p>
           </div>
           <div class="footer-col social-media">
             <h2>SOSIAL MEDIA</h2>
             <ul>
-              <li><a href="#"><i class="fab fa-instagram"></i> @hmjti_polije</a></li>
-              <li><a href="#"><i class="fab fa-tiktok"></i> @hmjti_polije</a></li>
-              <li><a href="#"><i class="fab fa-youtube"></i> @HMJ TI</a></li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i> @hmjti_polije</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-tiktok"></i> @hmjti_polije</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-youtube"></i> @HMJ TI</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -243,7 +355,10 @@
             if (loadingScreen.parentNode) loadingScreen.remove();
           }, 400);
         }
-        if (document.readyState === "interactive" || document.readyState === "complete") {
+        if (
+          document.readyState === "interactive" ||
+          document.readyState === "complete"
+        ) {
           hideLoading();
         } else {
           document.addEventListener("DOMContentLoaded", hideLoading);

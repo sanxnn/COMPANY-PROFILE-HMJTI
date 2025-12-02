@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kontak - HMJTI</title>
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/style.kontak.css">
+    <link rel="stylesheet" href="assets/css/style.kontak.css" />
     <link
       rel="stylesheet"
       href="assets/fontawesome-free-7.1.0-web/css/all.min.css"
@@ -48,7 +48,7 @@
       <div class="spinner"></div>
     </div>
 
-    <!-- navbar -->
+    <!-- Navbar -->
     <header>
       <nav class="navbar">
         <div class="logo">
@@ -58,6 +58,7 @@
           <span>HMJTI</span>
         </div>
 
+        <!-- Desktop Menu -->
         <ul class="nav-links">
           <li><a href="index.html">Beranda</a></li>
           <li class="dropdown">
@@ -86,7 +87,78 @@
           <li><a href="aspirasi.html">Aspirasi</a></li>
           <li><a href="kontak.html">Kontak</a></li>
         </ul>
+
+        <!-- Hamburger for Mobile -->
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </nav>
+
+      <!-- Mobile Sidebar Menu (Slide-in from left) -->
+      <div class="mobile-sidebar" id="mobile-sidebar">
+        <div class="sidebar-header">
+          <div class="sidebar-logo">
+            <img src="assets/images/logo_hmj.png" alt="HMJTI" />
+            <span>HMJTI</span>
+          </div>
+          <button class="close-btn" id="close-sidebar">×</button>
+        </div>
+        <div class="sidebar-content">
+          <ul class="sidebar-nav">
+            <li>
+              <a href="index.html"><i class="fas fa-home"></i> Beranda</a>
+            </li>
+
+            <li class="mobile-dropdown">
+              <a href="#" class="dropdown-toggle"
+                ><i class="fas fa-book"></i> Tentang</a
+              >
+              <ul class="dropdown-menu mobile-dropdown-menu">
+                <li><a href="sejarah.html">Sejarah</a></li>
+                <li><a href="visi-misi.html">Visi Misi</a></li>
+              </ul>
+            </li>
+
+            <li class="mobile-dropdown">
+              <a href="#" class="dropdown-toggle"
+                ><i class="fas fa-users"></i> Departemen</a
+              >
+              <ul class="dropdown-menu mobile-dropdown-menu">
+                <li><a href="struktur.html">Struktur</a></li>
+                <li><a href="departemen.html">Departemen</a></li>
+              </ul>
+            </li>
+
+            <li class="mobile-dropdown">
+              <a href="#" class="dropdown-toggle"
+                ><i class="fas fa-bullhorn"></i> Informasi</a
+              >
+              <ul class="dropdown-menu mobile-dropdown-menu">
+                <li><a href="berita.html">Berita</a></li>
+                <li><a href="beasiswa.html">Beasiswa</a></li>
+                <li><a href="lomba.html">Lomba</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="galeri.html"><i class="fas fa-images"></i> Galeri</a>
+            </li>
+            <li>
+              <a href="aspirasi.html"
+                ><i class="fas fa-comment"></i> Aspirasi</a
+              >
+            </li>
+            <li>
+              <a href="kontak.html"><i class="fas fa-envelope"></i> Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Overlay untuk close saat klik luar -->
+      <div class="overlay" id="overlay"></div>
     </header>
 
     <!-- CONTENT KONTAK -->

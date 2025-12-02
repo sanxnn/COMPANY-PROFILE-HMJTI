@@ -27,7 +27,11 @@
   </head>
 
   <body>
-    <!-- navbar -->
+    <!-- LOADING SCREEN -->
+    <div id="loading-screen">
+      <div class="spinner"></div>
+    </div>
+    <!-- Navbar -->
     <header>
       <nav class="navbar">
         <div class="logo">
@@ -37,9 +41,9 @@
           <span>HMJTI</span>
         </div>
 
+        <!-- Desktop Menu -->
         <ul class="nav-links">
           <li><a href="index.html">Beranda</a></li>
-
           <li class="dropdown">
             <a href="#">Tentang ▾</a>
             <ul class="dropdown-menu">
@@ -47,7 +51,6 @@
               <li><a href="visi-misi.html">Visi Misi</a></li>
             </ul>
           </li>
-
           <li class="dropdown">
             <a href="#">Departemen ▾</a>
             <ul class="dropdown-menu">
@@ -55,7 +58,6 @@
               <li><a href="departemen.html">Departemen</a></li>
             </ul>
           </li>
-
           <li class="dropdown">
             <a href="#">Informasi ▾</a>
             <ul class="dropdown-menu">
@@ -64,57 +66,145 @@
               <li><a href="lomba.html">Lomba</a></li>
             </ul>
           </li>
-
           <li><a href="galeri.html">Galeri</a></li>
           <li><a href="aspirasi.html">Aspirasi</a></li>
           <li><a href="kontak.html">Kontak</a></li>
         </ul>
+
+        <!-- Hamburger for Mobile -->
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </nav>
+
+      <!-- Mobile Sidebar Menu (Slide-in from left) -->
+      <div class="mobile-sidebar" id="mobile-sidebar">
+        <div class="sidebar-header">
+          <div class="sidebar-logo">
+            <img src="assets/images/logo_hmj.png" alt="HMJTI" />
+            <span>HMJTI</span>
+          </div>
+          <button class="close-btn" id="close-sidebar">×</button>
+        </div>
+        <div class="sidebar-content">
+          <ul class="sidebar-nav">
+            <li>
+              <a href="index.html"><i class="fas fa-home"></i> Beranda</a>
+            </li>
+
+            <li class="mobile-dropdown">
+              <a href="#" class="dropdown-toggle"
+                ><i class="fas fa-book"></i> Tentang</a
+              >
+              <ul class="dropdown-menu mobile-dropdown-menu">
+                <li><a href="sejarah.html">Sejarah</a></li>
+                <li><a href="visi-misi.html">Visi Misi</a></li>
+              </ul>
+            </li>
+
+            <li class="mobile-dropdown">
+              <a href="#" class="dropdown-toggle"
+                ><i class="fas fa-users"></i> Departemen</a
+              >
+              <ul class="dropdown-menu mobile-dropdown-menu">
+                <li><a href="struktur.html">Struktur</a></li>
+                <li><a href="departemen.html">Departemen</a></li>
+              </ul>
+            </li>
+
+            <li class="mobile-dropdown">
+              <a href="#" class="dropdown-toggle"
+                ><i class="fas fa-bullhorn"></i> Informasi</a
+              >
+              <ul class="dropdown-menu mobile-dropdown-menu">
+                <li><a href="berita.html">Berita</a></li>
+                <li><a href="beasiswa.html">Beasiswa</a></li>
+                <li><a href="lomba.html">Lomba</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="galeri.html"><i class="fas fa-images"></i> Galeri</a>
+            </li>
+            <li>
+              <a href="aspirasi.html"
+                ><i class="fas fa-comment"></i> Aspirasi</a
+              >
+            </li>
+            <li>
+              <a href="kontak.html"><i class="fas fa-envelope"></i> Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Overlay untuk close saat klik luar -->
+      <div class="overlay" id="overlay"></div>
     </header>
 
     <!-- hero -->
-<h1>STRUKTUR HMJTI</h1>
+    <h1>STRUKTUR HMJTI</h1>
 
-<section class="struktur-container">
-  <div class="slider">
-    <div class="slides">
-      <div class="card">
-        <img src="assets/images/coba 1.png" alt="Tiara Agustina Putri Wulandari - Ketua">
-        <div class="nama">TIARA AGUSTINA PUTRI W.</div>
-        <div class="jabatan">KETUA</div>
-      </div>
+    <section class="struktur-container">
+      <div class="slider">
+        <div class="slides">
+          <div class="card">
+            <img
+              src="assets/images/coba 1.png"
+              alt="Tiara Agustina Putri Wulandari - Ketua"
+            />
+            <div class="nama">TIARA AGUSTINA PUTRI W.</div>
+            <div class="jabatan">KETUA</div>
+          </div>
 
-      <div class="card">
-        <img src="assets/images/wakil_ketua 1.png" alt="Achmad Sofyan Haiki - Wakil Ketua">
-        <div class="nama">ACHMAD SOFYAN HAIKI</div>
-        <div class="jabatan">WAKIL KETUA</div>
-      </div>
+          <div class="card">
+            <img
+              src="assets/images/wakil_ketua 1.png"
+              alt="Achmad Sofyan Haiki - Wakil Ketua"
+            />
+            <div class="nama">ACHMAD SOFYAN HAIKI</div>
+            <div class="jabatan">WAKIL KETUA</div>
+          </div>
 
-      <div class="card">
-        <img src="assets/images/sekretaris1 1.png" alt="Liana Dewi Triantoko - Sekretaris 1">
-        <div class="nama">LIANA DEWI TRIANTOKO</div>
-        <div class="jabatan">SEKRETARIS 1</div>
-      </div>
-      <div class="card">
-        <img src="assets/images/coba 1.png" alt="Tiara Agustina Putri Wulandari - Ketua">
-        <div class="nama">TIARA AGUSTINA PUTRI W.</div>
-        <div class="jabatan">KETUA</div>
-      </div>
+          <div class="card">
+            <img
+              src="assets/images/sekretaris1 1.png"
+              alt="Liana Dewi Triantoko - Sekretaris 1"
+            />
+            <div class="nama">LIANA DEWI TRIANTOKO</div>
+            <div class="jabatan">SEKRETARIS 1</div>
+          </div>
+          <div class="card">
+            <img
+              src="assets/images/coba 1.png"
+              alt="Tiara Agustina Putri Wulandari - Ketua"
+            />
+            <div class="nama">TIARA AGUSTINA PUTRI W.</div>
+            <div class="jabatan">KETUA</div>
+          </div>
 
-      <div class="card">
-        <img src="assets/images/wakil_ketua 1.png" alt="Achmad Sofyan Haiki - Wakil Ketua">
-        <div class="nama">ACHMAD SOFYAN HAIKI</div>
-        <div class="jabatan">WAKIL KETUA</div>
-      </div>
+          <div class="card">
+            <img
+              src="assets/images/wakil_ketua 1.png"
+              alt="Achmad Sofyan Haiki - Wakil Ketua"
+            />
+            <div class="nama">ACHMAD SOFYAN HAIKI</div>
+            <div class="jabatan">WAKIL KETUA</div>
+          </div>
 
-      <div class="card">
-        <img src="assets/images/sekretaris1 1.png" alt="Liana Dewi Triantoko - Sekretaris 1">
-        <div class="nama">LIANA DEWI TRIANTOKO</div>
-        <div class="jabatan">SEKRETARIS 1</div>
+          <div class="card">
+            <img
+              src="assets/images/sekretaris1 1.png"
+              alt="Liana Dewi Triantoko - Sekretaris 1"
+            />
+            <div class="nama">LIANA DEWI TRIANTOKO</div>
+            <div class="jabatan">SEKRETARIS 1</div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
     <!-- ================= FOOTER ================= -->
     <footer class="footer">
@@ -174,6 +264,31 @@
     <script src="assets/js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- LOADING SCRIPT -->
+    <script>
+      // loading
+      (function () {
+        const loadingScreen = document.getElementById("loading-screen");
+        if (!loadingScreen) return;
+
+        function hideLoading() {
+          loadingScreen.classList.add("loading-hidden");
+          setTimeout(() => {
+            if (loadingScreen.parentNode) loadingScreen.remove();
+          }, 400);
+        }
+
+        if (
+          document.readyState === "interactive" ||
+          document.readyState === "complete"
+        ) {
+          hideLoading();
+        } else {
+          document.addEventListener("DOMContentLoaded", hideLoading);
+        }
+        setTimeout(hideLoading, 3500);
+      })();
+    </script>
     <script>
       // Init Slick Carousel
       $(document).ready(function () {
