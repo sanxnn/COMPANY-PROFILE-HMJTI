@@ -1,72 +1,177 @@
-        .title {
-            text-align: center;
-            font-size: 32px;
-            font-weight: bold;
-            margin-top: 50px;
-        }
+/* ==========================
+   STRUKTUR HMJTI — CENTERED & CONSISTENT
+   Sesuai layout index.html (max-width: 1200px, margin: 0 auto)
+========================== */
 
-        .struktur-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 40px;
-            margin: 60px 0;
-        }
+.struktur-container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto 60px;
+  padding: 80px 20px;
+  /* margin-top: 50px; */
+  /* min-height: 80vh; */
+}
 
-        .card {
-            width: 260px;
-            text-align: center;
-            padding-top: 0;
-        }
+/* Judul Struktur */
+h1 {
+  font-size: 2.6rem;
+  color: #0a2a87;
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 700;
+  position: relative;
+  margin-top: 80px;
+}
 
-        .card img {
-            width: 100%;
-            border-radius: 10px;
-        }
+h1::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 4px;
+  background: #0a2a87;
+  border-radius: 2px;
+}
 
-        .nama {
-            margin-top: 15px;
-            font-size: 17px;
-            font-weight: bold;
-            white-space: nowrap;
-        }
+/* Slider */
+.slider {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1100px;
+}
 
-        .jabatan {
-            color: #333;
-            margin-top: 5px;
-        }
+/* Slide Item */
+.slick-slide .card {
+  padding: 0 15px;
+  outline: none;
+}
 
-        .arrow {
-            font-size: 35px;
-            cursor: pointer;
-            padding: 10px;
-        }
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s ease;
+  /* margin: 0 auto 20px; */
+  /* margin: 0 20px; */
+}
 
+.card img {
+  width: 220px;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+  margin: 0 auto 20px;
+  transition: transform 0.3s ease;
+}
 
-        .struktur-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 40px;
-            margin: 60px 0;
-        }
+.card:hover img {
+  transform: scale(1.03);
+}
 
-        /* Biar slider gak menyempit */
-        .slider {
-            width: 840px;
-            /* 3 card × (260 width + 20 gap kira-kira) */
-            overflow: hidden;
-        }
+.card .nama {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0a2a87;
+  margin: 0 0 8px;
+  line-height: 1.4;
+}
 
-        /* Slides benar-benar flex dan tidak wrap */
-        .slides {
-            display: flex;
-            gap: 40px;
-            transition: transform 0.5s ease;
-        }
+.card .jabatan {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #061537;
+  background: linear-gradient(135deg, rgba(10, 42, 135, 0.1), transparent);
+  padding: 6px 16px;
+  border-radius: 20px;
+  display: inline-block;
+}
 
-        /* Jaga agar card tidak mengecil */
-        .card {
-            width: 260px;
-            flex-shrink: 0;
-        }
+/* Slick Dots */
+.slick-dots {
+  margin-top: 30px !important;
+  text-align: center;
+}
+
+.slick-dots li {
+  margin: 0 6px !important;
+}
+
+.slick-dots li button:before {
+  font-size: 10px !important;
+  color: #aaa !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #0a2a87 !important;
+  font-size: 12px !important;
+}
+
+/* Slick Arrows */
+.slick-prev,
+.slick-next {
+  width: 44px !important;
+  height: 44px !important;
+  background: white !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) !important;
+  z-index: 10 !important;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  background: #0a2a87 !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-family: 'Font Awesome 6 Free' !important;
+  font-weight: 900 !important;
+  color: #0a2a87 !important;
+  font-size: 20px !important;
+}
+
+.slick-prev:hover:before,
+.slick-next:hover:before {
+  color: white !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .card img {
+    width: 200px;
+  }
+
+  .card .nama {
+    font-size: 1.15rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.9rem;
+  }
+
+  h1::after {
+    width: 60px;
+  }
+
+  .card img {
+    width: 180px;
+  }
+
+  .card .nama {
+    font-size: 1.1rem;
+  }
+
+  .card .jabatan {
+    font-size: 1rem;
+    padding: 5px 14px;
+  }
+}
