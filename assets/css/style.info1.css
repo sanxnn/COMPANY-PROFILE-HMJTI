@@ -176,8 +176,6 @@
 
 .sidebar-nav a:hover,
 .sidebar-nav a.active {
-  background: rgba(10, 42, 135, 0.08);
-  color: #0a2a87;
   font-weight: 500;
 }
 
