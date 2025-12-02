@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- ✅ TAMBAHKAN BARIS INI -->
     <link
       rel="stylesheet"
       href="assets/fontawesome-free-7.1.0-web/css/all.min.css"
     />
+    <!-- =============== -->
     <link rel="stylesheet" href="assets/css/style.struktur.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
@@ -144,9 +146,7 @@
       <div class="overlay" id="overlay"></div>
     </header>
 
-    <!-- hero -->
     <h1>STRUKTUR HMJTI</h1>
-
     <section class="struktur-container">
       <div class="slider">
         <div class="slides">
@@ -261,12 +261,11 @@
     <div class="copyright">
       <p>Copyright © 2025 Design & Developed</p>
     </div>
-    <script src="assets/js/script.js"></script>
+    <!-- <script src="assets/js/script.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <!-- LOADING SCRIPT -->
     <script>
-      // loading
+      // LOADING SCREEN
       (function () {
         const loadingScreen = document.getElementById("loading-screen");
         if (!loadingScreen) return;
@@ -288,9 +287,8 @@
         }
         setTimeout(hideLoading, 3500);
       })();
-    </script>
-    <script>
-      // Init Slick Carousel
+
+      // SLICK JS
       $(document).ready(function () {
         $(".slides").slick({
           dots: true,
@@ -302,20 +300,72 @@
           autoplay: true,
           autoplaySpeed: 2500,
           responsive: [
-            {
-              breakpoint: 992,
-              settings: {
-                slidesToShow: 2,
-              },
-            },
-            {
-              breakpoint: 576,
-              settings: {
-                slidesToShow: 1,
-              },
-            },
+            { breakpoint: 992, settings: { slidesToShow: 2 } },
+            { breakpoint: 576, settings: { slidesToShow: 1 } },
           ],
         });
+      });
+
+      // MOBILE SIDEBAR & DROPDOWN (COPY-PASTE INI)
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamburger = document.getElementById("hamburger");
+        const mobileSidebar = document.getElementById("mobile-sidebar");
+        const closeBtn = document.getElementById("close-sidebar");
+        const overlay = document.getElementById("overlay");
+
+        function openSidebar() {
+          mobileSidebar.classList.add("active");
+          overlay.classList.add("active");
+          document.body.style.overflow = "hidden";
+        }
+
+        function closeSidebar() {
+          mobileSidebar.classList.remove("active");
+          overlay.classList.remove("active");
+          document.body.style.overflow = "";
+          document.querySelectorAll(".mobile-dropdown").forEach((item) => {
+            item.classList.remove("active");
+          });
+        }
+
+        if (hamburger) hamburger.addEventListener("click", openSidebar);
+        if (closeBtn) closeBtn.addEventListener("click", closeSidebar);
+        if (overlay) overlay.addEventListener("click", closeSidebar);
+
+        // ✅ INI YANG SERING KELEWATAN: AMAN DARI CONFLICT
+        setTimeout(() => {
+          document.querySelectorAll(".dropdown-toggle").forEach((toggle) => {
+            toggle.addEventListener("click", function (e) {
+              e.preventDefault();
+              const parent = this.closest(".mobile-dropdown");
+              const menu = parent.querySelector(".mobile-dropdown-menu");
+
+              document.querySelectorAll(".mobile-dropdown").forEach((item) => {
+                if (item !== parent) {
+                  item.classList.remove("active");
+                  const m = item.querySelector(".mobile-dropdown-menu");
+                  if (m) m.style.maxHeight = "0px";
+                }
+              });
+
+              parent.classList.toggle("active");
+
+              if (parent.classList.contains("active")) {
+                setTimeout(() => {
+                  if (menu) menu.style.maxHeight = menu.scrollHeight + "px";
+                }, 10);
+              } else {
+                if (menu) menu.style.maxHeight = "0px";
+              }
+            });
+          });
+
+          document
+            .querySelectorAll(".mobile-dropdown-menu a")
+            .forEach((link) => {
+              link.addEventListener("click", closeSidebar);
+            });
+        }, 300); // Delay sedikit biar DOM siap
       });
     </script>
   </body>

@@ -346,6 +346,15 @@ header {
   padding-left: 46px;
 }
 
+/* Fallback ikon jika Font Awesome gagal */
+.sidebar-nav a i::before {
+  content: "•";
+  font-family: Arial, sans-serif;
+  display: inline-block;
+  width: 20px;
+  text-align: center;
+}
+
 
 
 /* Responsive */

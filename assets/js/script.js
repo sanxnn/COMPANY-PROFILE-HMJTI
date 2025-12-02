@@ -114,3 +114,4 @@ backToTop.addEventListener("click", function (e) {
     behavior: "smooth",
   });
 });
+
