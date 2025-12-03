@@ -8,9 +8,8 @@
 .info-main-section h2 {
   font-size: 2.6rem;
   color: #0a2a87;
-  margin-bottom: 50px;
-  position: relative;
   font-weight: 700;
+  margin-bottom: 50px;
 }
 
 .info-main-section h2::after {
@@ -55,6 +54,19 @@
 }
 
 /* Card Image Header */
+
+.card-1 .card-image {
+  background-image: url('../images/informasi/epim1.jpg');
+}
+
+.card-2 .card-image {
+  background-image: url('../images/informasi/nidji.jpg');
+}
+
+.card-3 .card-image {
+  background-image: url('../images/informasi/lkmm.jpg');
+}
+
 .card-image {
   height: 180px;
   background-size: cover;
@@ -72,17 +84,6 @@
   background: linear-gradient(to top, rgba(0, 0, 0, 0.3), transparent 60%);
 }
 
-.card-1 .card-image {
-  background-image: url('../images/informasi/epim1.jpg');
-}
-
-.card-2 .card-image {
-  background-image: url('../images/informasi/nidji.jpg');
-}
-
-.card-3 .card-image {
-  background-image: url('../images/informasi/lkmm.jpg');
-}
 
 /* Card Content */
 .card-content {
