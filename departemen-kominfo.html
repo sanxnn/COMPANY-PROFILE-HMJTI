@@ -14,6 +14,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/detail.departemen.css" />
+    <link rel="stylesheet" href="assets/aos-master/dist/aos.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   </head>
   <body>
@@ -136,7 +137,7 @@
 
     <!-- hero -->
 
-    <section class="detail-departemen">
+    <section class="detail-departemen" data-aos="fade-in">
       <div class="container">
         <h1 class="judul-departemen">DEPARTEMEN KOMINFO</h1>
 
@@ -149,9 +150,9 @@
         </p>
 
         <div class="tugas-section">
-          <h3>Tugas & Fungsi</h3>
+          <h3 data-aos="fade-in">Tugas & Fungsi</h3>
           <div class="grid-tugas">
-            <div class="card-tugas">
+            <div class="card-tugas" data-aos="fade-up">
               <h4>PETUGAS MEDIA SOSIAL</h4>
               <p>
                 Mengelola akun Instagram, TikTok, dan YouTube HMJTI secara
@@ -160,7 +161,7 @@
               </p>
             </div>
 
-            <div class="card-tugas">
+            <div class="card-tugas" data-aos="fade-up">
               <h4>OPTIMALISASI WEBSITE</h4>
               <p>
                 Memastikan website HMJTI selalu update, responsif, dan mudah
@@ -169,7 +170,7 @@
               </p>
             </div>
 
-            <div class="card-tugas">
+            <div class="card-tugas" data-aos="fade-up">
               <h4>PUSAT INFORMASI DIGITAL</h4>
               <p>
                 Mengumpulkan dan menyebarkan informasi lomba IT/umum, beasiswa,
@@ -178,7 +179,7 @@
               </p>
             </div>
 
-            <div class="card-tugas">
+            <div class="card-tugas" data-aos="fade-up">
               <h4>DOKUMENTASI & REKAP</h4>
               <p>
                 Mendokumentasikan kegiatan HMJTI dalam bentuk foto/video,
@@ -276,6 +277,13 @@
         }
         setTimeout(hideLoading, 3500);
       })();
+    </script>
+    <script src="assets/aos-master/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 2000,
+        once: true,
+      })
     </script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="assets/js/script.js"></script>

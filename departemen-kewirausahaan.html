@@ -13,6 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="assets/aos-master/dist/aos.css">
     <link rel="stylesheet" href="assets/css/detail.departemen.css" />
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   </head>
@@ -136,7 +137,7 @@
     </header>
 
     <!-- Konten Utama -->
-    <section class="detail-departemen">
+    <section class="detail-departemen" data-aos="fade-in">
       <div class="container">
         <h1 class="judul-departemen">DEPARTEMEN KEWIRAUSAHAAN</h1>
 
@@ -152,7 +153,7 @@
         <div class="tugas-section">
           <h3>Tugas & Fungsi</h3>
           <div class="grid-tugas">
-            <div class="card-tugas">
+            <div class="card-tugas" data-aos="fade-up">
               <h4>PENGEMBANGAN JIWA WIRAUSAHA</h4>
               <p>
                 Menyelenggarakan pelatihan mindset wirausaha, manajemen bisnis
@@ -161,7 +162,7 @@
               </p>
             </div>
 
-            <div class="card-tugas">
+            <div class="card-tugas" data-aos="fade-up">
               <h4>INKUBASI BISNIS MAHASISWA</h4>
               <p>
                 Mendampingi ide bisnis mahasiswa dari konsep → MVP → launching
@@ -170,7 +171,7 @@
               </p>
             </div>
 
-            <div class="card-tugas">
+            <div class="card-tugas" data-aos="fade-up">
               <h4>KOLABORASI DENGAN UMKM</h4>
               <p>
                 Menjembatani mahasiswa TI dengan UMKM lokal Jember dalam proyek
@@ -179,7 +180,7 @@
               </p>
             </div>
 
-            <div class="card-tugas">
+            <div class="card-tugas" data-aos="fade-up">
               <h4>EVENT KEWIRAUSAHAAN</h4>
               <p>
                 Mengadakan kompetisi bisnis seperti
@@ -189,7 +190,7 @@
               </p>
             </div>
 
-            <div class="card-tugas">
+            <div class="card-tugas" data-aos="fade-up">
               <h4>AKSES PENDANAAN & INVESTOR</h4>
               <p>
                 Memfasilitasi akses ke program pembiayaan seperti PKM-K,
@@ -198,7 +199,7 @@
               </p>
             </div>
 
-            <div class="card-tugas">
+            <div class="card-tugas" data-aos="fade-up">
               <h4>PENGEMBANGAN PRODUK TI KOMERSIAL</h4>
               <p>
                 Mendorong pembuatan produk digital yang siap jual: aplikasi,
@@ -211,9 +212,9 @@
 
         <!-- Program Unggulan -->
         <div class="tugas-section" style="margin-top: 60px">
-          <h3>Program Unggulan</h3>
+          <h3 data-aos="fade-in">Program Unggulan</h3>
           <div class="grid-tugas">
-            <div class="card-tugas">
+            <div class="card-tugas" data-aos="fade-up">
               <h4>TI STARTUP INCUBATOR</h4>
               <p>
                 Program 3 bulan intensif untuk 5–10 tim terpilih: mentoring
@@ -222,7 +223,7 @@
               </p>
             </div>
 
-            <div class="card-tugas">
+            <div class="card-tugas" data-aos="fade-up">
               <h4>DIGITALISASI UMKM JEMBER</h4>
               <p>
                 Program pengabdian berbasis proyek: mahasiswa membuat sistem
@@ -231,7 +232,7 @@
               </p>
             </div>
 
-            <div class="card-tugas">
+            <div class="card-tugas" data-aos="fade-up">
               <h4>TI BAZAAR</h4>
               <p>
                 Pasar fisik & digital rutin (offline & Instagram Shop) untuk
@@ -240,7 +241,7 @@
               </p>
             </div>
 
-            <div class="card-tugas">
+            <div class="card-tugas" data-aos="fade-up">
               <h4>WIRAUSAHA MUDA TI (WMT)</h4>
               <p>
                 Komunitas eksklusif bagi mahasiswa yang serius berwirausaha —
@@ -253,10 +254,10 @@
 
         <!-- Kolaborasi Strategis -->
         <div class="tugas-section" style="margin-top: 60px">
-          <h3>Mitra Strategis</h3>
+          <h3 data-aos="fade-in">Mitra Strategis</h3>
           <div class="grid-tugas">
             <div
-              class="card-tugas"
+              class="card-tugas"  data-aos="fade-up"
               style="text-align: center; padding: 30px 20px"
             >
               <h4 style="margin-bottom: 15px">POLINEMA BUSINESS CENTER</h4>
@@ -266,14 +267,14 @@
               </p>
             </div>
             <div
-              class="card-tugas"
+              class="card-tugas"  data-aos="fade-up"
               style="text-align: center; padding: 30px 20px"
             >
               <h4 style="margin-bottom: 15px">DINAS KOPERASI & UMKM JEMBER</h4>
               <p>Pendampingan UMKM & akses program pembiayaan daerah</p>
             </div>
             <div
-              class="card-tugas"
+              class="card-tugas" data-aos="fade-up"
               style="text-align: center; padding: 30px 20px"
             >
               <h4 style="margin-bottom: 15px">GOJEK X POLINEMA</h4>
@@ -282,7 +283,7 @@
               </p>
             </div>
             <div
-              class="card-tugas"
+              class="card-tugas" data-aos="fade-up"
               style="text-align: center; padding: 30px 20px"
             >
               <h4 style="margin-bottom: 15px">STARTUP JEMBER COMMUNITY</h4>
@@ -370,6 +371,13 @@
         }
         setTimeout(hideLoading, 3500);
       })();
+    </script>
+    <script src="assets/aos-master/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 2000,
+        once: true,
+      })
     </script>
     <script src="assets/js/script.js"></script>
   </body>

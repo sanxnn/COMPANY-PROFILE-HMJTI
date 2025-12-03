@@ -13,6 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="assets/aos-master/dist/aos.css">
     <link rel="stylesheet" href="assets/css/detail.departemen.css" />
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   </head>
@@ -137,7 +138,7 @@
 
     <!-- Konten Utama -->
     <section class="detail-departemen">
-      <div class="container">
+      <div class="container" data-aos="fade-in">
         <h1 class="judul-departemen">DEPARTEMEN KEILMUAN</h1>
 
         <p class="deskripsi-departemen">
@@ -153,7 +154,7 @@
         <div class="tugas-section">
           <h3>Tugas & Fungsi</h3>
           <div class="grid-tugas">
-            <div class="card-tugas">
+            <div class="card-tugas" data-aos="fade-up">
               <h4>PELATIHAN & WORKSHOP TEKNIS</h4>
               <p>
                 Menyelenggarakan pelatihan rutin seperti Web Programming, Mobile
@@ -162,7 +163,7 @@
               </p>
             </div>
 
-            <div class="card-tugas">
+            <div class="card-tugas" data-aos="fade-up">
               <h4>PENDAMPINGAN LOMBA & KOMPETISI</h4>
               <p>
                 Memberikan pembinaan intensif bagi tim HMJTI yang mengikuti
@@ -171,7 +172,7 @@
               </p>
             </div>
 
-            <div class="card-tugas">
+            <div class="card-tugas" data-aos="fade-up">
               <h4>KOLABORASI LABORATORIUM</h4>
               <p>
                 Bekerja sama dengan laboratorium jurusan (Lab. Jaringan, Lab.
@@ -181,7 +182,7 @@
               </p>
             </div>
 
-            <div class="card-tugas">
+            <div class="card-tugas" data-aos="fade-up">
               <h4>SERTIFIKASI & KOMPETENSI</h4>
               <p>
                 Memfasilitasi akses pelatihan sertifikasi (misal: Google IT
@@ -190,7 +191,7 @@
               </p>
             </div>
 
-            <div class="card-tugas">
+            <div class="card-tugas" data-aos="fade-up">
               <h4>KONSULTASI AKADEMIK & TEKNIS</h4>
               <p>
                 Membuka layanan konsultasi bebas untuk mahasiswa yang
@@ -199,7 +200,7 @@
               </p>
             </div>
 
-            <div class="card-tugas">
+            <div class="card-tugas" data-aos="fade-up">
               <h4>GELAR KARYA MAHASISWA (GKM)</h4>
               <p>
                 Menjadi koordinator teknis dalam penyelenggaraan Gelar Karya
@@ -212,9 +213,9 @@
 
         <!-- Program Unggulan -->
         <div class="tugas-section" style="margin-top: 60px">
-          <h3>Program Unggulan</h3>
+          <h3 data-aos="fade-in">Program Unggulan</h3>
           <div class="grid-tugas">
-            <div class="card-tugas">
+            <div class="card-tugas" data-aos="fade-up">
               <h4>TI WEEKLY TECH TALK</h4>
               <p>
                 Seminar mingguan dengan narasumber dosen, alumni, atau praktisi
@@ -222,7 +223,7 @@
               </p>
             </div>
 
-            <div class="card-tugas">
+            <div class="card-tugas" data-aos="fade-up">
               <h4>CODING BOOTCAMP</h4>
               <p>
                 Pelatihan intensif 2–4 minggu untuk pemula → mahir dalam stack
@@ -230,7 +231,7 @@
               </p>
             </div>
 
-            <div class="card-tugas">
+            <div class="card-tugas" data-aos="fade-up">
               <h4>TI INNOVATION CHALLENGE</h4>
               <p>
                 Kompetisi internal HMJTI untuk menggali ide kreatif mahasiswa
@@ -238,7 +239,7 @@
               </p>
             </div>
 
-            <div class="card-tugas">
+            <div class="card-tugas" data-aos="fade-up">
               <h4>ACADEMIC MENTORING SYSTEM</h4>
               <p>
                 Program pairing senior-junior untuk pendampingan akademik &
@@ -332,6 +333,13 @@
         }
         setTimeout(hideLoading, 3500);
       })();
+    </script>
+    <script src="assets/aos-master/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 2000,
+        once: true,
+      })
     </script>
     <script src="assets/js/script.js"></script>
   </body>

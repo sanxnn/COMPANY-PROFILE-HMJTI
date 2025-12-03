@@ -13,6 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="assets/aos-master/dist/aos.css">
     <link rel="stylesheet" href="assets/css/detail.departemen.css" />
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   </head>
@@ -136,7 +137,7 @@
     </header>
 
     <!-- Konten Utama -->
-    <section class="detail-departemen">
+    <section class="detail-departemen" data-aos="fade-in">
       <div class="container">
         <h1 class="judul-departemen">DEPARTEMEN PERHUBUNGAN</h1>
 
@@ -153,7 +154,7 @@
         <div class="tugas-section">
           <h3>Tugas & Fungsi</h3>
           <div class="grid-tugas">
-            <div class="card-tugas">
+            <div class="card-tugas" data-aos="fade-up">
               <h4>KOMUNIKASI INTERNAL & EKSTERNAL</h4>
               <p>
                 Menjadi penghubung resmi antara HMJTI dengan BEM, DPM, Hima
@@ -162,7 +163,7 @@
               </p>
             </div>
 
-            <div class="card-tugas">
+            <div class="card-tugas" data-aos="fade-up">
               <h4>JEJARING ORGANSISASI</h4>
               <p>
                 Mengelola keanggotaan HMJTI dalam forum-forum seperti FORKOMTI
@@ -171,7 +172,7 @@
               </p>
             </div>
 
-            <div class="card-tugas">
+            <div class="card-tugas" data-aos="fade-up">
               <h4>MITRA & KERJA SAMA</h4>
               <p>
                 Menjalin dan memelihara kemitraan dengan perusahaan IT (Telkom,
@@ -181,7 +182,7 @@
               </p>
             </div>
 
-            <div class="card-tugas">
+            <div class="card-tugas" data-aos="fade-up">
               <h4>ALUMNI RELATIONS</h4>
               <p>
                 Mengelola database alumni TI Polije, mengadakan gathering
@@ -190,7 +191,7 @@
               </p>
             </div>
 
-            <div class="card-tugas">
+            <div class="card-tugas" data-aos="fade-up">
               <h4>ADVOKASI & KOORDINASI ACARA</h4>
               <p>
                 Mengkoordinasikan izin & support teknis untuk kegiatan HMJTI
@@ -200,7 +201,7 @@
               </p>
             </div>
 
-            <div class="card-tugas">
+            <div class="card-tugas" data-aos="fade-up">
               <h4>PROTOKOL & ACARA RESMI</h4>
               <p>
                 Menyusun tata cara protokoler HMJTI, mengatur sambutan resmi,
@@ -213,9 +214,9 @@
 
         <!-- Program Unggulan -->
         <div class="tugas-section" style="margin-top: 60px">
-          <h3>Program Unggulan</h3>
+          <h3 data-aos="fade-in">Program Unggulan</h3>
           <div class="grid-tugas">
-            <div class="card-tugas">
+            <div class="card-tugas" data-aos="fade-up">
               <h4>TOKTI (Temu Kangen TI)</h4>
               <p>
                 Gathering tahunan alumni TI Polije untuk silaturahmi, sharing
@@ -223,7 +224,7 @@
               </p>
             </div>
 
-            <div class="card-tugas">
+            <div class="card-tugas" data-aos="fade-up">
               <h4>HMJTI NETWORKING DAY</h4>
               <p>
                 Event khusus mengundang perwakilan HMJ TI/ILKOM se-Jawa Timur
@@ -231,7 +232,7 @@
               </p>
             </div>
 
-            <div class="card-tugas">
+            <div class="card-tugas" data-aos="fade-up">
               <h4>INDUSTRY PARTNER MEETUP</h4>
               <p>
                 Pertemuan rutin dengan perusahaan mitra untuk presentasi proyek
@@ -239,7 +240,7 @@
               </p>
             </div>
 
-            <div class="card-tugas">
+            <div class="card-tugas" data-aos="fade-up">
               <h4>DATABASE MITRA & ALUMNI</h4>
               <p>
                 Sistem digital terpusat berisi profil mitra, alumni, kontak, dan
@@ -328,6 +329,13 @@
         }
         setTimeout(hideLoading, 3500);
       })();
+    </script>
+    <script src="assets/aos-master/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 2000,
+        once: true,
+      })
     </script>
     <script src="assets/js/script.js"></script>
   </body>
