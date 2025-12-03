@@ -1,8 +1,3 @@
-/* ==========================
-   INFORMASI PAGE — HMJTI
-   Modern Card Grid, Consistent Theme
-========================== */
-
 .info-main-section {
   max-width: 1200px;
   width: 90%;
@@ -28,6 +23,10 @@
   height: 4px;
   background: #0a2a87;
   border-radius: 2px;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
 }
 
 /* Grid Layout */
