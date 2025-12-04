@@ -39,7 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         card.addEventListener('mouseleave', () => {
-            // Hapus kelas hanya jika mouse benar-benar meninggalkan elemen
             card.classList.remove('hover-effect');
         });
     });

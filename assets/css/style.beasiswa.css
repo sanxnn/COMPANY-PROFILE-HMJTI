@@ -171,6 +171,10 @@ body {
   background: linear-gradient(135deg, #061537, #000000);
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(10, 42, 135, 0.35);
+  -webkit-transform: translateY(-2px);
+  -moz-transform: translateY(-2px);
+  -ms-transform: translateY(-2px);
+  -o-transform: translateY(-2px);
 }
 
 .guidebook-link .link-box i {

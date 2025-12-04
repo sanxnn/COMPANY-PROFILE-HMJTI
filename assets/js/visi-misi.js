@@ -8,7 +8,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// Scroll Reveal Animation
+// Animasi muncul saat scroll
 const revealElements = document.querySelectorAll(".reveal, .reveal-item");
 
 function revealOnScroll() {
