@@ -112,7 +112,7 @@
 }
 
 .schedule-list li::before {
-  content: '●';
+  /*content: '●';*/
   position: absolute;
   left: 0;
   top: 50%;
@@ -120,13 +120,13 @@
   font-size: 1.4rem;
 }
 
-.schedule-list li.online::before {
+/*.schedule-list li.online::before {
   color: #28a745;
 }
 
 .schedule-list li.offline::before {
   color: #dc3545;
-}
+}*/
 
 /* --- Right Column: Sidebar --- */
 .sidebar-column {
@@ -160,7 +160,7 @@
 }
 
 .sidebar-nav li::before {
-  content: '▹';
+  content: '.';
   margin-right: 8px;
   color: #ffcc00;
 }
